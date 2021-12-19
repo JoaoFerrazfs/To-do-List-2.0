@@ -18,15 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/perfil', 'client.perfil');
-Route::view('/criarnota', 'client.newNote');
+Route::view('/perfil', 'client.perfil')->middleware('auth');
+Route::view('/criarnota', 'client.newNote')->middleware('auth');
 
-Route::post('/criarnota/salvar',[NoteController::class,'store']);
-Route::post('/minhanota/editar',[NoteController::class,'update']);
-Route::get('/minhanota/{id}',[NoteController::class,'myNote']);
-Route::delete('/minhanota/apagar/{id}',[NoteController::class,'destroy']);
-Route::get('/dashboard',[NoteController::class,'index']);
-Route::get('/mydashboard',[NoteController::class,'index']);
+Route::post('/criarnota/salvar',[NoteController::class,'store'])->middleware('auth');
+Route::post('/minhanota/editar',[NoteController::class,'update'])->middleware('auth');
+Route::get('/minhanota/{id}',[NoteController::class,'myNote'])->middleware('auth');
+Route::delete('/minhanota/apagar/{id}',[NoteController::class,'destroy'])->middleware('auth');
+Route::get('/dashboard',[NoteController::class,'index'])->middleware('auth');
+Route::get('/mydashboard',[NoteController::class,'index'])->middleware('auth');
 
 
 

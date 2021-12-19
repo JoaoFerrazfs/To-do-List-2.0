@@ -58,7 +58,7 @@ class NoteController extends Controller
 
    public function myNote($id){
 
-      $data = Note::where('_id','=',$id)->get();
+      $data = Note::find($id)->get();
       
 
       $notes =[];
