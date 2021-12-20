@@ -29,6 +29,8 @@ O sistema permitirá um gerenciamento de tarefas pelo usuário
 - `Astah UML` 
 
 
+## Instalação
+
 ## Autores
 
 | [<img src="https://avatars.githubusercontent.com/u/50000291?v=4" width=115><br><sub>JoaoFerrazfs</sub>](https://github.com/JoaoFerrazfs) 
