@@ -12,13 +12,13 @@
 
     <div class=" input-group ">
         <span class="input-group-text" id="inputGroup-sizing-default">Titulo</span>
-        <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <input type="text" name="title" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
     </div>
 
     <div class="row mt-4 ">
         <div class=" col-sm input-group ">
             <span class="input-group-text" id="inputGroup-sizing-default">Data Inicial</span>
-            <input type="date" name="initialDate" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="date" name="initialDate" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  >
         </div>
 
         <div class=" col-sm input-group ">
@@ -29,7 +29,7 @@
 
     <div class="input-group mt-4">
         <span class="input-group-text">Descrição</span>
-        <textarea name="description" class="form-control" aria-label="With textarea"></textarea>
+        <textarea name="description" class="form-control" aria-label="With textarea" required  ></textarea>
     </div>
 
 
