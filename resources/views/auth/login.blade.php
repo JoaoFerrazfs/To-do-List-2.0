@@ -47,7 +47,7 @@
                     </a>
                 @endif
 
-                <button class="btn" type="submite" name="login">Login</button>
+                <button style="margin:10px 20px;" class="btn" type="submite" name="login">Login</button>
             </div>
         </form>
     </x-auth-card>

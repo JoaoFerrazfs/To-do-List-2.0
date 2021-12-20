@@ -32,15 +32,15 @@
             <div class="d-flex">
                 <li class="nav-item dropdown d-flex">
                     <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                       Bem vindo {{session()->get('user.name')}}
+                        Bem vindo {{session()->get('user.name')}}
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="#">Meus Dados</a></li>
-                        <li><a class="dropdown-item" href="#">Mudar ambiente</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+                        <li class="">
+                            <form method="post" action="/logout">
+                            @csrf
+                                <button type="submit" class=" container btn ">Sair</button>
+                            </form>
                         </li>
-                        <li><a class="dropdown-item" href="/logout">Sair</a></li>
                     </ul>
                 </li>
 
@@ -51,7 +51,7 @@
         </nav>
     </header>
 
-    
+
     <footer>
 
         <nav class="navbar fixed-bottom navbar-light bg-light">
