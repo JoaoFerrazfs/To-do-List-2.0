@@ -31,7 +31,7 @@ O sistema permitirá um gerenciamento de tarefas pelo usuário
 
 ## Instalação
 
-### 1 ºRodar os seguintes comandos
+### 1º Rodar os seguintes comandos
 -`composer update`
 -`cp .env.example .env`
 -`php artisan key:generate`
